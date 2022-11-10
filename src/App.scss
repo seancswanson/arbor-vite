@@ -1,20 +1,18 @@
 .App {
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
 }
+
 .main {
-  border: 1px solid pink;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.top {
   width: 100%;
+  max-width: 680px;
+  gap: 40px;
+}
 
   .profile-picture {
     background-image: url(./assets/profile.gif);
@@ -24,36 +22,38 @@
     width: 200px;
     height: 200px;
     border: 10px solid black;
-  }  
-}
+    margin-bottom: 20px;
+  }
 
 .bottom {
   width: 100%;
 }
 
+.link-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
-.links-wrapper {
-  .link-list {
+  .link-item {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    .link-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 1px solid white;
-      border-radius: 3px;
-        text-decoration: none;
-        color: black;
-        font-size: 1.5rem;
-        width: 100%;
-        &:hover {
-          color: pink;
-        }
+    border: 1px solid white;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+
+    &:hover {
+      color: pink;
     }
   }
+
 }

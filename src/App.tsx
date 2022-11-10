@@ -7,14 +7,13 @@ function App() {
 
   return (
     <div className="App">
-      <div className="main">
+      <main className="main">
         <div className="top">
           <div className="profile-picture">
           </div>
           <div className="profile-name">@swanny3d</div>
         </div>
         <div className="bottom">
-          <div className="links-wrapper">
             <ul className="link-list">
               <a href="#" className="link-item">
                 <div className="link-icon">
@@ -29,9 +28,8 @@ function App() {
                 <div className="link-text">Instagram</div>
               </a>
             </ul>
-          </div>
         </div>
-      </div>
+      </main>
     </div>
   )
 }
